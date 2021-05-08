@@ -1,11 +1,11 @@
-<html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="siteASPMaratona.adminlogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   
-   <!-- <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>-->
-<title>Maratona de Lisboa 2020</title>
-
-
+    <title>Maratona de Lisboa 2020</title>
+    
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,10 +31,10 @@
   	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
-
 </head>
-	<body>
-		<!-- Navigation section -->
+<body>
+    <form id="form1" runat="server">
+        		<!-- Navigation section -->
 		<div class="navbar navbar-default navbar-static-top" role="navigation">
   			<div class="container">
 				<div class="navbar-header">
@@ -47,7 +47,7 @@
     			</div>
     			<div class="collapse navbar-collapse">
       			 <ul class="nav navbar-nav">
-       			  <li><a href="home.html" class="smoothScroll">Página Inicial</a></li>
+       			  <li><a href="home.aspx" class="smoothScroll">Página Inicial</a></li>
       			 </ul>
     			</div>
   			</div>
@@ -112,6 +112,9 @@
 
 		<script src="js/custom.js"></script>
 
-</body>
 
+
+
+    </form>
+</body>
 </html>
