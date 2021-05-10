@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace siteASPMaratona
 {
@@ -18,6 +21,11 @@ namespace siteASPMaratona
             ipma.Load("http://ipma.pt/resources.www/clientes/10150.marinha/wp_d0.xml");
 
             Xml_meteo.Document = ipma;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="col-md-12">
-                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Confirmar" />
+                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Confirmar" OnClick="Button1_Click" />
                 </div>
 
             </div>

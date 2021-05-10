@@ -102,11 +102,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\montserrat\OFL.txt" />
     <Content Include="home.aspx" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\edit.png" />
     <Content Include="images\home-bg-slideshow1.jpg" />
     <Content Include="images\home-bg-slideshow2.jpg" />
     <Content Include="images\home-bg-slideshow3.jpg" />
     <Content Include="images\linkedin.png" />
     <Content Include="images\percurso.jpg" />
+    <Content Include="images\save.png" />
     <Content Include="images\slide-img1.jpg" />
     <Content Include="images\slide-img2.jpg" />
     <Content Include="images\slide-img3.jpg" />
