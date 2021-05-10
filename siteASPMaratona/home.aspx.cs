@@ -33,6 +33,12 @@ namespace siteASPMaratona
             myCommand.Parameters.AddWithValue("@email", tb_email_atleta.Text);
             myCommand.Parameters.AddWithValue("@password", tb_password.Text);
 
+            SqlParameter validarUser = new SqlParameter();
+            validarUser.ParameterName = "@retorno";
+            validarUser.Direction = ParameterDirection.Output;
+            validarUser.SqlDbType = SqlDbType.Int;
+            myCommand.Parameters.Add(validarUser);
+
             myCommand.CommandType = CommandType.StoredProcedure;
 
             myCommand.CommandText = "inserir_atleta";
@@ -41,9 +47,15 @@ namespace siteASPMaratona
 
             myConn.Open();
             myCommand.ExecuteNonQuery(); //é um insert na bd mas não devolve dados
+
+            int replyStoredProcedure = Convert.ToInt32(myCommand.Parameters["@retorno"].Value);
+
             myConn.Close(); //fecha aplicação para não consumir dados
 
-            lbl_mensagem.Text = "Obrigado por se inscrever! Verifique o seu e-mail para mais detalhes";
+            if (replyStoredProcedure == 1)
+                lbl_mensagem.Text = "Obrigado por se inscrever! Verifique o seu e-mail para mais detalhes";
+            else
+                lbl_mensagem.Text = "Já existe um atleta inscrito com o seu e-mail";
         }
     }
 }
