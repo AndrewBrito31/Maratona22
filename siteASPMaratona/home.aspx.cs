@@ -32,7 +32,9 @@ namespace siteASPMaratona
             myCommand.Parameters.AddWithValue("@nome_atleta", tb_nome_atleta.Text);
             myCommand.Parameters.AddWithValue("@email", tb_email_atleta.Text);
 
-            myCommand.CommandText = "insert into atleta values (@nome_atleta, @email)";
+            myCommand.CommandType = CommandType.StoredProcedure;
+
+            myCommand.CommandText = "inserir_atleta";
 
             myCommand.Connection = myConn;
 
