@@ -96,7 +96,7 @@
                         </label>
                             <h4>E-mail</h4>
                         <label class="form-label">
-                            <asp:TextBox type="text" ID="email_atleta" runat="server" class="form-control" placeholder="Insira o seu email" Width="291px"></asp:TextBox>
+                            <asp:TextBox type="text" ID="tb_email_atleta" runat="server" class="form-control" placeholder="Insira o seu email" Width="291px"></asp:TextBox>
                         </label>
                     </div>
                 </div>

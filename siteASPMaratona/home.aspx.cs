@@ -25,6 +25,20 @@ namespace siteASPMaratona
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            SqlConnection myConn = new SqlConnection(ConfigurationManager.ConnectionStrings["Maratona22ConnectionString"].ConnectionString);
+
+            SqlCommand myCommand = new SqlCommand();
+
+            myCommand.Parameters.AddWithValue("@nome_atleta", tb_nome_atleta.Text);
+            myCommand.Parameters.AddWithValue("@email", tb_email_atleta.Text);
+
+            myCommand.CommandText = "insert into atleta values (@nome_atleta, @email)";
+
+            myCommand.Connection = myConn;
+
+            myConn.Open();
+            myCommand.ExecuteNonQuery(); //é um insert na bd mas não devolve dados
+            myConn.Close(); //fecha aplicação para não consumir dados
 
         }
     }

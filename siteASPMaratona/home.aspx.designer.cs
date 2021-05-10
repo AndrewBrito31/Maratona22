@@ -33,13 +33,13 @@ namespace siteASPMaratona
         protected global::System.Web.UI.WebControls.TextBox tb_nome_atleta;
 
         /// <summary>
-        /// email_atleta control.
+        /// tb_email_atleta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email_atleta;
+        protected global::System.Web.UI.WebControls.TextBox tb_email_atleta;
 
         /// <summary>
         /// Button1 control.
