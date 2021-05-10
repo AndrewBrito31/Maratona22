@@ -31,6 +31,7 @@ namespace siteASPMaratona
 
             myCommand.Parameters.AddWithValue("@nome_atleta", tb_nome_atleta.Text);
             myCommand.Parameters.AddWithValue("@email", tb_email_atleta.Text);
+            myCommand.Parameters.AddWithValue("@password", tb_password.Text);
 
             myCommand.CommandType = CommandType.StoredProcedure;
 
@@ -42,6 +43,7 @@ namespace siteASPMaratona
             myCommand.ExecuteNonQuery(); //é um insert na bd mas não devolve dados
             myConn.Close(); //fecha aplicação para não consumir dados
 
+            lbl_mensagem.Text = "Obrigado por se inscrever! Verifique o seu e-mail para mais detalhes";
         }
     }
 }

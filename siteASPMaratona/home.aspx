@@ -46,10 +46,17 @@
             <div class="gradient-overlay"></div>
             <div class="container">
 
+
                 <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    
+               <h2 style="color:whitesmoke">
+                   <asp:Label ID="lbl_mensagem" runat="server" Text="Label"></asp:Label>
+               </h2>
+
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">Maratona de Lisboa 2022</h1>
-                    <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Inscreva-se!</a>
+<%--                    <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Inscreva-se!</a>--%>
                 </div>
+
                 
             </div>
         </section>
@@ -94,11 +101,15 @@
                         <label class="form-label">
                             <asp:TextBox type="text" ID="tb_nome_atleta" runat="server" class="form-control" placeholder="Insira o seu nome" Width="291px"></asp:TextBox>
                         </label>
-                            <h4>E-mail</h4>
+                        <h4>E-mail</h4>
                         <label class="form-label">
-                            <asp:TextBox type="text" ID="tb_email_atleta" runat="server" class="form-control" placeholder="Insira o seu email" Width="291px"></asp:TextBox>
+                            <asp:TextBox type="text" ID="tb_email_atleta" runat="server" class="form-control" placeholder="Insira o seu email" Width="291px" TextMode="Email"></asp:TextBox>
                         </label>
-                    </div>
+                        <h4>Password</h4>
+                        <label class="form-label">           
+                            <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira a password" Width="291px" TextMode="Password"></asp:TextBox>
+                          </label>
+                        </div>
                 </div>
 
                 <div class="col-md-12">
@@ -208,6 +219,7 @@
         <script src="js/wow.min.js"></script>
 
         <script src="js/custom.js"></script>
+
 
     </form>
 </body>

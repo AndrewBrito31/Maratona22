@@ -24,6 +24,15 @@ namespace siteASPMaratona
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lbl_mensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_mensagem;
+
+        /// <summary>
         /// tb_nome_atleta control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace siteASPMaratona
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_email_atleta;
+
+        /// <summary>
+        /// tb_password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_password;
 
         /// <summary>
         /// Button1 control.
