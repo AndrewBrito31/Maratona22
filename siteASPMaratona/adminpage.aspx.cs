@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace siteASPMaratona
 {
-    public partial class adminlogin : System.Web.UI.Page
+    public partial class adminpage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("adminpage.aspx");
         }
     }
 }

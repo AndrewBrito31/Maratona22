@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminlogin.aspx" />
+    <Content Include="adminpage.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -129,6 +130,7 @@
     <Content Include="js\npm.js" />
     <Content Include="js\smoothscroll.js" />
     <Content Include="js\wow.min.js" />
+    <Content Include="meteoLisboa.xslt" />
     <Content Include="percurso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -139,6 +141,20 @@
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpage.aspx.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpage.aspx.designer.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backend.Master.cs">
+      <DependentUpon>backend.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backend.Master.designer.cs">
+      <DependentUpon>backend.Master</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
@@ -241,6 +257,7 @@
     <Content Include="fonts\poppins\Poppins-SemiBoldItalic.ttf" />
     <Content Include="fonts\poppins\Poppins-Thin.ttf" />
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="backend.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

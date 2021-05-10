@@ -37,6 +37,7 @@
         <!-- Preloader section -->
         <div class="preloader">
             <div class="sk-spinner sk-spinner-pulse"></div>
+  
         </div>
 
 
@@ -49,7 +50,7 @@
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">Maratona de Lisboa 2022</h1>
                     <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Inscreva-se!</a>
                 </div>
-
+                
             </div>
         </section>
 
@@ -117,9 +118,10 @@
                         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
                             <h2>Sobre a Maratona de Lisboa</h2>
                             <h3>Galeria | Informação | Percurso</h3>
+                            <h3> &nbsp;Tempo em Lisboa <h4> &nbsp;<asp:Xml ID="Xml_meteo" runat="server"></asp:Xml> </h4></h3>
                         </div>
                     </div>
-
+                     
                     <div class="wow fadeInUp col-md-6 col-sm-4" data-wow-delay="0.5s">
                         <h3>Galeria</h3>
                         <!-- flexslider -->
@@ -137,7 +139,7 @@
                                 </li>
 
                             </ul>
-
+                            
                         </div>
                         <p>A prova decorrerá a 8 de Maio de 2022 pelas 8h30 e percurso total de 42,195km terá que ser percorrido no máximo em 6 horas terminando no máximo às 14h30.</p>
                     </div>
@@ -147,11 +149,15 @@
                             <h3>Percurso</h3>
                             <img src="images/percurso.jpg" class="img-responsive" alt="Percurso">
                         </a>
-                    </div>
+         
+                    </div>  
 
 
 
                 </div>
+
+        
+
             </div>
         </section>
 

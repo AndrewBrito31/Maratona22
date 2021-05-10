@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="siteASPMaratona.adminlogin" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="backend.master.cs" Inherits="siteASPMaratona.backend" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <title>Maratona de Lisboa 2020</title>
-    
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +29,7 @@
 
   	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+
 
 </head>
 <body>
@@ -58,29 +58,16 @@
     <div class="row">
 
         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>ADMIN | LOGIN </h2>
-            <p>Insira nome de utlizador e palavra passe para aceder</p>
+            <h2>Lista de Atletas</h2>
 		<br/>
-			<div class="row">
-               	<label for="validationDefault02" class="form-label">Utilizador
-                 <input type="text" class="form-control" id="validationDefault02">
-                </label>
- 			</div>
-  			<div class="row">
-                <label for="validationDefault02" class="form-label">Palavra Passe
-                  <input type="text" class="form-control" id="validationDefault02">
-                </label>
-  			</div>	
-            <asp:Button ID="Button1" runat="server" Text="Login" type="submit" class="btn btn-danger" OnClick="Button1_Click" />
-          </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
                		
         </div>
 
     </div>
   </div>
 </section>
-
-
 
 <footer>
    <div class="row">
@@ -111,9 +98,6 @@
 		<script src="js/wow.min.js"></script>
 
 		<script src="js/custom.js"></script>
-
-
-
 
     </form>
 </body>
