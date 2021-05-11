@@ -15,6 +15,24 @@ namespace siteASPMaratona
     {
 
         /// <summary>
+        /// btn_excel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_excel;
+
+        /// <summary>
+        /// btn_word control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_word;
+
+        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>

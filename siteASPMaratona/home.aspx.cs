@@ -55,7 +55,7 @@ namespace siteASPMaratona
             if (replyStoredProcedure == 1)
                 lbl_mensagem.Text = "Obrigado por se inscrever! Verifique o seu e-mail para mais detalhes";
             else
-                lbl_mensagem.Text = "Já existe um atleta inscrito com o seu e-mail";
+                lbl_mensagem.Text = "Já existe um atleta inscrito com o endereço de email que inseriu";
         }
     }
 }

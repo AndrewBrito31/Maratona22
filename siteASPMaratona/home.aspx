@@ -56,7 +56,6 @@
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">Maratona de Lisboa 2022</h1>
 <%--                    <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Inscreva-se!</a>--%>
                 </div>
-
                 
             </div>
         </section>
