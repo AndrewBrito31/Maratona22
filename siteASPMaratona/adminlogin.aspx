@@ -60,21 +60,33 @@
         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
             <h2>ADMIN | LOGIN </h2>
             <p>Insira nome de utlizador e palavra passe para aceder</p>
+		    
 		<br/>
 			<div class="row">
-               	<label for="validationDefault02" class="form-label">Utilizador
-                 <input type="text" class="form-control" id="validationDefault02">
+               	<label class="form-label">Utilizador
+                 <asp:TextBox ID="tb_utilizador" runat="server"></asp:TextBox>
                 </label>
  			</div>
   			<div class="row">
-                <label for="validationDefault02" class="form-label">Palavra Passe
-                  <input type="text" class="form-control" id="validationDefault02">
+                <label for="validationDefault02" class="form-label">E-mail
+                  <asp:TextBox ID="tb_email" runat="server"></asp:TextBox>
                 </label>
+                 <div class="row">
+                <label for="validationDefault02" class="form-label">Palavra Passe
+                  <asp:TextBox ID="tb_password" runat="server"></asp:TextBox>
+                </label>
+  			    <br />
+                <br />
   			</div>	
-            <asp:Button ID="Button1" runat="server" Text="Login" type="submit" class="btn btn-danger" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Login" type="submit" class="btn btn-danger" OnClick="Button1_Click" Width="168px" />
+            <br />
+            <br />
+            <asp:Button ID="btn_regUtilizador" runat="server" Text="Registo Utilizador" type="submit" class="btn btn-danger" OnClick="btn_regUtilizador_Click" Width="165px" />
           </div>
                		
         </div>
+
+        <asp:Label ID="lbl_mensagem" runat="server" Text="Label"></asp:Label>
 
     </div>
   </div>

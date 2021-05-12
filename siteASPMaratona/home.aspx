@@ -50,7 +50,7 @@
                 <div class="col-md-offset-2 col-md-8 col-sm-12">
                     
                <h2 style="color:whitesmoke">
-                   <asp:Label ID="lbl_mensagem" runat="server" Text="Label" Visible="True"></asp:Label>
+                   <asp:Label ID="lbl_mensagem" runat="server" Text="" Visible="True"></asp:Label>
                </h2>
 
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">Maratona de Lisboa 2022</h1>
