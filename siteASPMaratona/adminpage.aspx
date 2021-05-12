@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/backend.Master" AutoEventWireup="true" CodeBehind="adminpage.aspx.cs" Inherits="siteASPMaratona.adminpage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+    <div class="container" style="height: 805px; width: 882px">
         <br />
         <asp:Button ID="btn_excel" runat="server" OnClick="btn_excel_Click" Text="Exportar Lista Para Excel" />
         <br />
@@ -8,11 +8,11 @@
         <asp:Button ID="btn_word" runat="server" OnClick="btn_word_Click" Text="Exportar Lista Para Word" />
         <br />
         <br />
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="num_dorsal" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" Height="282px" Width="870px" AllowPaging="True" AllowSorting="True" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" PageSize="20">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="num_dorsal" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="282px" Width="870px" AllowPaging="True" AllowSorting="True" PageSize="20">
     <AlternatingRowStyle BackColor="White" />
     <Columns>
-        <asp:BoundField DataField="num_dorsal" HeaderText="Nº Atleta / Dorsal" InsertVisible="False" ReadOnly="True" SortExpression="num_dorsal" >
-        <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" Wrap="True" />    
+        <asp:BoundField DataField="num_dorsal" HeaderText="Nº Atleta / Dorsal" InsertVisible="False" ReadOnly="True" SortExpression="num_dorsal" ApplyFormatInEditMode="True" >
+        <HeaderStyle HorizontalAlign="Right" VerticalAlign="Middle" Wrap="True" />    
         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
         </asp:BoundField>
         <asp:BoundField DataField="nome_atleta" HeaderText="Nome do Atleta" SortExpression="nome_atleta" >
@@ -27,16 +27,23 @@
         <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
         </asp:CommandField>
+        <asp:TemplateField></asp:TemplateField>
+        <asp:CommandField>
+        <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+        </asp:CommandField>
+        <asp:TemplateField>
+            <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+        </asp:TemplateField>
     </Columns>
-    <FooterStyle BackColor="#CCCC99" />
-    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
-    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-    <RowStyle BackColor="#F7F7DE" />
-    <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
-    <SortedAscendingCellStyle BackColor="#FBFBF2" />
-    <SortedAscendingHeaderStyle BackColor="#848384" />
-    <SortedDescendingCellStyle BackColor="#EAEAD3" />
-    <SortedDescendingHeaderStyle BackColor="#575357" />
+    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+    <SortedAscendingCellStyle BackColor="#FDF5AC" />
+    <SortedAscendingHeaderStyle BackColor="#4D0000" />
+    <SortedDescendingCellStyle BackColor="#FCF6C0" />
+    <SortedDescendingHeaderStyle BackColor="#820000" />
 </asp:GridView>
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Maratona22ConnectionString %>" SelectCommand="SELECT * FROM [atleta]" DeleteCommand="DELETE FROM [atleta] WHERE [num_dorsal] = @num_dorsal" InsertCommand="INSERT INTO [atleta] ([nome_atleta], [email]) VALUES (@nome_atleta, @email)" UpdateCommand="UPDATE [atleta] SET [nome_atleta] = @nome_atleta, [email] = @email WHERE [num_dorsal] = @num_dorsal">
     <DeleteParameters>
