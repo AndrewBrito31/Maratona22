@@ -70,6 +70,7 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="adminregister.aspx" />
     <Content Include="adminpage.aspx" />
+    <Content Include="ativacao.aspx" />
     <Content Include="atletaspage.aspx" />
     <Content Include="contacto.aspx" />
     <Content Include="css\animate.min.css" />
@@ -163,6 +164,13 @@
     </Compile>
     <Compile Include="adminpage.aspx.designer.cs">
       <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ativacao.aspx.cs">
+      <DependentUpon>ativacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ativacao.aspx.designer.cs">
+      <DependentUpon>ativacao.aspx</DependentUpon>
     </Compile>
     <Compile Include="atletaspage.aspx.cs">
       <DependentUpon>atletaspage.aspx</DependentUpon>

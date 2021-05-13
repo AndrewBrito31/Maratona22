@@ -11,52 +11,31 @@ using System.Security.Cryptography;
 
 namespace siteASPMaratona
 {
-    public partial class loginatletas : System.Web.UI.Page
+    public partial class ativacao : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string nomeAtleta = DecryptString(Request.QueryString["nome_atleta"]);
 
-        }
-
-        protected void btn_login_atletas_Click(object sender, EventArgs e)
-        {
             SqlConnection myConn = new SqlConnection(ConfigurationManager.ConnectionStrings["Maratona22ConnectionString"].ConnectionString);
 
             SqlCommand myCommand = new SqlCommand();
 
-            myCommand.Parameters.AddWithValue("@nome_atleta", tb_nome_atleta.Text);
-            myCommand.Parameters.AddWithValue("@password", EncryptString(tb_password.Text));
-
-            SqlParameter validarUser = new SqlParameter();
-            validarUser.ParameterName = "@retorno_atleta";
-            validarUser.Direction = ParameterDirection.Output; //devolve dados
-            validarUser.SqlDbType = SqlDbType.Int;
-            myCommand.Parameters.Add(validarUser);
+            myCommand.Parameters.AddWithValue("@nome_atleta", nomeAtleta);
 
             myCommand.CommandType = CommandType.StoredProcedure;
 
-            myCommand.CommandText = "login_atleta";
+            myCommand.CommandText = "ativacao_atleta";
 
             myCommand.Connection = myConn;
 
             myConn.Open();
             myCommand.ExecuteNonQuery(); //é um insert na bd mas não devolve dados
 
-            int replyStoredProcedure = Convert.ToInt32(myCommand.Parameters["@retorno_atleta"].Value);
-
             myConn.Close(); //fecha aplicação para não consumir dados
-
-            if (replyStoredProcedure == 2)
-                Response.Redirect("atletaspage.aspx");
-
-            else if (replyStoredProcedure == 1)
-                lbl_mensagem.Text = "Utilizador inativo. Verifique a sua caixa de e-mail e ative a sua conta.";
-            else
-                lbl_mensagem.Text = "Utilizador ou password incorretas";
-          
         }
 
-        public static string EncryptString(string Message)
+        public static string DecryptString(string Message)
         {
             string Passphrase = "rosamota";
             byte[] Results;
@@ -72,19 +51,25 @@ namespace siteASPMaratona
             // Step 2. Create a new TripleDESCryptoServiceProvider object
             TripleDESCryptoServiceProvider TDESAlgorithm = new TripleDESCryptoServiceProvider();
 
-            // Step 3. Setup the encoder
+            // Step 3. Setup the decoder
             TDESAlgorithm.Key = TDESKey;
             TDESAlgorithm.Mode = CipherMode.ECB;
             TDESAlgorithm.Padding = PaddingMode.PKCS7;
 
             // Step 4. Convert the input string to a byte[]
-            byte[] DataToEncrypt = UTF8.GetBytes(Message);
 
-            // Step 5. Attempt to encrypt the string
+            Message = Message.Replace("KKK", "+");
+            Message = Message.Replace("JJJ", "/");
+            Message = Message.Replace("III", "\\");
+
+
+            byte[] DataToDecrypt = Convert.FromBase64String(Message);
+
+            // Step 5. Attempt to decrypt the string
             try
             {
-                ICryptoTransform Encryptor = TDESAlgorithm.CreateEncryptor();
-                Results = Encryptor.TransformFinalBlock(DataToEncrypt, 0, DataToEncrypt.Length);
+                ICryptoTransform Decryptor = TDESAlgorithm.CreateDecryptor();
+                Results = Decryptor.TransformFinalBlock(DataToDecrypt, 0, DataToDecrypt.Length);
             }
             finally
             {
@@ -93,18 +78,9 @@ namespace siteASPMaratona
                 HashProvider.Clear();
             }
 
-            // Step 6. Return the encrypted string as a base64 encoded string
-
-            string enc = Convert.ToBase64String(Results);
-            enc = enc.Replace("+", "KKK");
-            enc = enc.Replace("/", "JJJ");
-            enc = enc.Replace("\\", "III");
-            return enc;
+            // Step 6. Return the decrypted string in UTF8 format
+            return UTF8.GetString(Results);
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("home.aspx#feature");
-        }
     }
 }

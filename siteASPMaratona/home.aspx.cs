@@ -9,6 +9,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Security.Cryptography;
+using System.Net;
+using System.Net.Mail;
 
 namespace siteASPMaratona
 {
@@ -54,9 +56,29 @@ namespace siteASPMaratona
             myConn.Close(); //fecha aplicação para não consumir dados
 
             if (replyStoredProcedure == 1)
-                lbl_mensagem.Text = "Obrigado por se inscrever! Verifique o seu e-mail para mais detalhes";
+            {
+                lbl_mensagem.Text = "Obrigado por se inscrever! Verifique o seu e-mail para mais detalhes e ativação da sua conta";
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("andreasp.net@gmail.com");
+                mail.To.Add(tb_email_atleta.Text);
+                mail.Subject = $" Maratona Lisboa Ativação de Conta / Confirmação de Inscrição Maratona Lisboa";
+
+                mail.IsBodyHtml = true;
+                mail.Body = $"Obrigado pela sua inscrição {tb_nome_atleta.Text}! Clique <a href='https://localhost:44352/ativacao.aspx?nome_atleta={EncryptString(tb_nome_atleta.Text)}'>aqui</a> para ativar a sua conta e confirmar a sua inscrição.";
+
+                SmtpClient servidor = new SmtpClient();
+                servidor.Host = "smtp.gmail.com";
+                servidor.Port = 587;
+                servidor.Credentials = new NetworkCredential("andreasp.net@gmail.com", "Citeforma2021");
+
+                servidor.EnableSsl = true;
+
+                servidor.Send(mail);
+
+            }
             else
-                lbl_mensagem.Text = "Já existe um atleta inscrito com o endereço de email que inseriu";
+                lbl_mensagem.Text = "Já existe um atleta inscrito com o mesmos nome e endereço de email que inseriu";
         }
 
         public static string EncryptString(string Message)
