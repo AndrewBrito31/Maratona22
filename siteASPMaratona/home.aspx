@@ -112,10 +112,18 @@
                 </div>
 
                 <div class="col-md-12">
-                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Inscrever" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Inscrever" OnClick="Button1_Click" />                   
+                </div>
+                                <div class="col-md-12">
+                                    <br />
+                                    <br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Login Atletas Inscritos</asp:LinkButton>
                 </div>
 
+                
             </div>
+
+
         </section>
 
 

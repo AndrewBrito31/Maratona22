@@ -70,6 +70,7 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="adminregister.aspx" />
     <Content Include="adminpage.aspx" />
+    <Content Include="atletaspage.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -135,6 +136,7 @@
     <Content Include="js\npm.js" />
     <Content Include="js\smoothscroll.js" />
     <Content Include="js\wow.min.js" />
+    <Content Include="loginatletas.aspx" />
     <Content Include="meteoLisboa.xslt" />
     <Content Include="percurso.aspx" />
     <Content Include="Web.config" />
@@ -161,6 +163,13 @@
     <Compile Include="adminpage.aspx.designer.cs">
       <DependentUpon>adminpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="atletaspage.aspx.cs">
+      <DependentUpon>atletaspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="atletaspage.aspx.designer.cs">
+      <DependentUpon>atletaspage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="backend.Master.cs">
       <DependentUpon>backend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -174,6 +183,13 @@
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginatletas.aspx.cs">
+      <DependentUpon>loginatletas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginatletas.aspx.designer.cs">
+      <DependentUpon>loginatletas.aspx</DependentUpon>
     </Compile>
     <Compile Include="percurso.aspx.cs">
       <DependentUpon>percurso.aspx</DependentUpon>

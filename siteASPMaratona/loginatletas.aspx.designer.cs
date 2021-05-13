@@ -11,7 +11,7 @@ namespace siteASPMaratona
 {
 
 
-    public partial class home
+    public partial class loginatletas
     {
 
         /// <summary>
@@ -24,15 +24,6 @@ namespace siteASPMaratona
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lbl_mensagem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_mensagem;
-
-        /// <summary>
         /// tb_nome_atleta control.
         /// </summary>
         /// <remarks>
@@ -40,15 +31,6 @@ namespace siteASPMaratona
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_nome_atleta;
-
-        /// <summary>
-        /// tb_email_atleta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_email_atleta;
 
         /// <summary>
         /// tb_password control.
@@ -60,30 +42,21 @@ namespace siteASPMaratona
         protected global::System.Web.UI.WebControls.TextBox tb_password;
 
         /// <summary>
-        /// Button1 control.
+        /// btn_login_atletas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btn_login_atletas;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// lbl_mensagem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
-
-        /// <summary>
-        /// Xml_meteo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Xml Xml_meteo;
+        protected global::System.Web.UI.WebControls.Label lbl_mensagem;
     }
 }
