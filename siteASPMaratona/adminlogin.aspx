@@ -83,7 +83,7 @@
 
                     </div>
 
-                          <asp:Label ID="lbl_mensagem" runat="server" Text=""></asp:Label>
+                          <asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label>
 
                 </div>
             </div>

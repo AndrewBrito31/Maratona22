@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Security.Cryptography;
 
+
 namespace siteASPMaratona
 {
     public partial class adminlogin : System.Web.UI.Page
@@ -26,7 +27,7 @@ namespace siteASPMaratona
 
             myCommand.Parameters.AddWithValue("@utilizador", tb_utilizador.Text);
             myCommand.Parameters.AddWithValue("@email", tb_email.Text);
-            myCommand.Parameters.AddWithValue("@password", tb_password.Text);
+            myCommand.Parameters.AddWithValue("@password", EncryptString(tb_password.Text));
 
             SqlParameter validarUser = new SqlParameter();
             validarUser.ParameterName = "@retorno_user";
@@ -48,9 +49,9 @@ namespace siteASPMaratona
             myConn.Close(); //fecha aplicação para não consumir dados
 
             if (replyStoredProcedure == 1)
-                lbl_mensagem.Text = "Novo Utilizador Registado";
+                lbl_mensagem.Text = "Novo Utilizador Registado com Sucesso.";
             else
-                lbl_mensagem.Text = "Esse utilizador já existe";
+                lbl_mensagem.Text = "Esse utilizador já existe!";
         }
 
         public static string EncryptString(string Message)
@@ -98,7 +99,6 @@ namespace siteASPMaratona
             enc = enc.Replace("\\", "III");
             return enc;
         }
-
 
     }
 }

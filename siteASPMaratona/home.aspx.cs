@@ -32,7 +32,7 @@ namespace siteASPMaratona
 
             myCommand.Parameters.AddWithValue("@nome_atleta", tb_nome_atleta.Text);
             myCommand.Parameters.AddWithValue("@email", tb_email_atleta.Text);
-            myCommand.Parameters.AddWithValue("@password", tb_password.Text);
+            myCommand.Parameters.AddWithValue("@password", EncryptString(tb_password.Text));
 
             SqlParameter validarUser = new SqlParameter();
             validarUser.ParameterName = "@retorno";
@@ -58,7 +58,6 @@ namespace siteASPMaratona
             else
                 lbl_mensagem.Text = "Já existe um atleta inscrito com o endereço de email que inseriu";
         }
-
 
         public static string EncryptString(string Message)
         {
