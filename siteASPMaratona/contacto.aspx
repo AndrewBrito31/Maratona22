@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="loginatletas.aspx.cs" Inherits="siteASPMaratona.loginatletas" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="contacto.aspx.cs" Inherits="siteASPMaratona.contacto" %>
 
 <!DOCTYPE html>
 
@@ -57,36 +57,27 @@
                 <div class="row">
 
                     <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-                        <h2>ATLETAS | LOGIN </h2>
-                        <p>Insira nome de utlizador e palavra passe para aceder</p>
+                        <h2>FORMUlÁRIO | CONTACTO </h2>
+                        <p>Envie-nos um e-mail através do formulário em baixo</p>
 
                         <br />
                         <div class="row">
-                            <h4>Utilizador</h4>
-                            <label class="form-label">                             
-                                <asp:TextBox type="text" ID="tb_nome_atleta" runat="server" class="form-control" placeholder="Insira o seu nome" Width="291px"></asp:TextBox>
+                            <h4>Para o podermos contactar insira o seu endereço de e-mail</h4>
+                            <label class="form-label">                     
+                                <asp:TextBox type="text" ID="tb_from" runat="server" class="form-control" placeholder="Insira o seu endereço de e-mail" Width="291px" AutoCompleteType="None" TextMode="Email"></asp:TextBox>
                             </label>
                         </div>
-                        <div class="row">
-                            <h4>Password</h4>
+                         <div class="row">
+                            <h4>Formulário de Contacto</h4>
                             <label class="form-label">
-                                <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira a sua password" Width="291px" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox ID="tb_formulario" runat="server" class="form-control" placeholder="Escreva aqui a sua mensagem" TextMode="MultiLine" Height="288px" Width="509px"></asp:TextBox>
                             </label>
-                            <br />
-                            <br />
-                        </div>
-                        <asp:Button ID="btn_login_atletas" Text="Login" type="submit" class="btn btn-danger" runat="server" Width="168px" OnClick="btn_login_atletas_Click"/><br />
-                        <br />
-                         <br />
-                        <br />
-                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Inscrição Atletas</asp:LinkButton>
-
+                          </div>
+                        <asp:Button ID="btn_enviar" runat="server" Text="Enviar Mensagem" type="submit" class="btn btn-danger" OnClick="btn_enviar_Click" />
+                          <h3> <asp:Label ID="lbl_msgEnviada" runat="server" Text="Obrigado pela sua mensagem. Voltaremos ao seu contacto em breve. " Visible="False"></asp:Label></h3>
                     </div>
-
                     </div>
-
-                          <asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label>
-
+                      
                 </div>
             </div>
         </section>

@@ -79,6 +79,7 @@
                         <li><a href="#feature" class="smoothScroll">Inscrição</a></li>
                         <li><a href="#about" class="smoothScroll">Sobre a Maratona</a></li>
                         <li><a href="percurso.aspx" class="smoothScroll">Percurso</a></li>
+                        <li><a href="contacto.aspx" class="smoothScroll">Contacte-nos</a></li>
                     </ul>
                 </div>
 
@@ -106,7 +107,7 @@
                         </label>
                         <h4>Password</h4>
                         <label class="form-label">           
-                            <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira a password" Width="291px" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira a sua password" Width="291px" TextMode="Password"></asp:TextBox>
                           </label>
                         </div>
                 </div>

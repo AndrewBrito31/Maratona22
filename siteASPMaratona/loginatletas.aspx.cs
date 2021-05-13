@@ -47,13 +47,11 @@ namespace siteASPMaratona
             myConn.Close(); //fecha aplicação para não consumir dados
 
             if (replyStoredProcedure == 1)
-                lbl_mensagem.Text = "Atleta Autenticado";
+                Response.Redirect("atletaspage.aspx");
 
             else
                 lbl_mensagem.Text = "Utilizador ou password incorretas";
-
-            if (replyStoredProcedure == 1)
-                Response.Redirect("atletaspage.aspx");
+          
         }
 
         public static string EncryptString(string Message)
@@ -102,5 +100,9 @@ namespace siteASPMaratona
             return enc;
         }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("home.aspx#feature");
+        }
     }
 }

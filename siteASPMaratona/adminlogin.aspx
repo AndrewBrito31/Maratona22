@@ -70,7 +70,7 @@
                         <div class="row">
                             <h4>Password</h4>
                             <label class="form-label">
-                                <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira o email" Width="291px" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira a sua password" Width="291px" TextMode="Password"></asp:TextBox>
                             </label>
                             <br />
                             <br />

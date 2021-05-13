@@ -11,7 +11,7 @@ namespace siteASPMaratona
 {
 
 
-    public partial class loginatletas
+    public partial class contacto
     {
 
         /// <summary>
@@ -24,48 +24,39 @@ namespace siteASPMaratona
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// tb_nome_atleta control.
+        /// tb_from control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_nome_atleta;
+        protected global::System.Web.UI.WebControls.TextBox tb_from;
 
         /// <summary>
-        /// tb_password control.
+        /// tb_formulario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_password;
+        protected global::System.Web.UI.WebControls.TextBox tb_formulario;
 
         /// <summary>
-        /// btn_login_atletas control.
+        /// btn_enviar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_login_atletas;
+        protected global::System.Web.UI.WebControls.Button btn_enviar;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// lbl_msgEnviada control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
-
-        /// <summary>
-        /// lbl_mensagem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_mensagem;
+        protected global::System.Web.UI.WebControls.Label lbl_msgEnviada;
     }
 }

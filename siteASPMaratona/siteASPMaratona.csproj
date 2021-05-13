@@ -71,6 +71,7 @@
     <Content Include="adminregister.aspx" />
     <Content Include="adminpage.aspx" />
     <Content Include="atletaspage.aspx" />
+    <Content Include="contacto.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="backend.Master.designer.cs">
       <DependentUpon>backend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="contacto.aspx.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacto.aspx.designer.cs">
+      <DependentUpon>contacto.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>

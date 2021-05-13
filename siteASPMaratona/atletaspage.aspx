@@ -48,7 +48,7 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="home.aspx" class="smoothScroll">Logout</a></li>
+        <li><a href="loginatletas.aspx" class="smoothScroll">Logout</a></li>
       </ul>
     </div>
 
