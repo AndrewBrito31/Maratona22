@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminlogin.aspx" />
+    <Content Include="adminregister.aspx" />
     <Content Include="adminpage.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-theme.css" />
@@ -145,6 +146,13 @@
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminregister.aspx.cs">
+      <DependentUpon>adminregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminregister.aspx.designer.cs">
+      <DependentUpon>adminregister.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminpage.aspx.cs">
       <DependentUpon>adminpage.aspx</DependentUpon>

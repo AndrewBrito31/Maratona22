@@ -2,12 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container" style="height: 805px; width: 882px">
         <br />
-        <asp:Button ID="btn_excel" runat="server" OnClick="btn_excel_Click" Text="Exportar Lista Para Excel" />
-        <br />
-        <br />
-        <asp:Button ID="btn_word" runat="server" OnClick="btn_word_Click" Text="Exportar Lista Para Word" />
-        <br />
-        <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="num_dorsal" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="282px" Width="870px" AllowPaging="True" AllowSorting="True" PageSize="20">
     <AlternatingRowStyle BackColor="White" />
     <Columns>
@@ -45,6 +39,10 @@
     <SortedDescendingCellStyle BackColor="#FCF6C0" />
     <SortedDescendingHeaderStyle BackColor="#820000" />
 </asp:GridView>
+        <br />
+        <asp:Button ID="btn_excel" runat="server" OnClick="btn_excel_Click" type="button" class="btn btn-success" Text="Exportar para Excel" />
+        &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btn_word" runat="server" OnClick="btn_word_Click"  type="button" class="btn btn-primary" Text="Exportar para Word" />
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Maratona22ConnectionString %>" SelectCommand="SELECT * FROM [atleta]" DeleteCommand="DELETE FROM [atleta] WHERE [num_dorsal] = @num_dorsal" InsertCommand="INSERT INTO [atleta] ([nome_atleta], [email]) VALUES (@nome_atleta, @email)" UpdateCommand="UPDATE [atleta] SET [nome_atleta] = @nome_atleta, [email] = @email WHERE [num_dorsal] = @num_dorsal">
     <DeleteParameters>
         <asp:Parameter Name="num_dorsal" Type="Int32" />

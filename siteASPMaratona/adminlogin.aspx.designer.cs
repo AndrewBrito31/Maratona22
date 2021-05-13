@@ -11,7 +11,7 @@ namespace siteASPMaratona
 {
 
 
-    public partial class adminlogin
+    public partial class adminlogin1
     {
 
         /// <summary>
@@ -33,15 +33,6 @@ namespace siteASPMaratona
         protected global::System.Web.UI.WebControls.TextBox tb_utilizador;
 
         /// <summary>
-        /// tb_email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_email;
-
-        /// <summary>
         /// tb_password control.
         /// </summary>
         /// <remarks>
@@ -60,13 +51,13 @@ namespace siteASPMaratona
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// btn_regUtilizador control.
+        /// LinkButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_regUtilizador;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
 
         /// <summary>
         /// lbl_mensagem control.

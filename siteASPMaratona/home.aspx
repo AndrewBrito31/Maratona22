@@ -97,7 +97,7 @@
                         <h3>Inscreva-se e fique na história desta mítica prova</h3>
                         <br />
                         <h4>Nome do Atleta</h4>
-                        <label class="form-label">
+                        <label class="form-group">
                             <asp:TextBox type="text" ID="tb_nome_atleta" runat="server" class="form-control" placeholder="Insira o seu nome" Width="291px"></asp:TextBox>
                         </label>
                         <h4>E-mail</h4>
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="col-md-12">
-                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Confirmar" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Inscrever" OnClick="Button1_Click" />
                 </div>
 
             </div>
@@ -218,8 +218,11 @@
         <script src="js/wow.min.js"></script>
 
         <script src="js/custom.js"></script>
-
-
     </form>
+
+
 </body>
 </html>
+
+
+
