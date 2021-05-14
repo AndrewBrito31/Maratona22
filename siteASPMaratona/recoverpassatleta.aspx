@@ -1,10 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="backend.master.cs" Inherits="siteASPMaratona.backend" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="recoverpassatleta.aspx.cs" Inherits="siteASPMaratona.recoverpassatleta" %>
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Maratona de Lisboa 2020</title>
+
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +31,7 @@
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
 
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -43,19 +44,11 @@
         				<span class="icon icon-bar"></span>
         				<span class="icon icon-bar"></span>
       				</button>
-      				<a href="#" class="navbar-brand">ADMIN | Gestão Inscrições</a><br />
-                    <br />
-                    <br />
-                    <br />
-&nbsp;
-                    <asp:Label ID="lbl_id_utilizador" runat="server"></asp:Label>
-                    <br />
-                    <br />
-                    <asp:LinkButton ID="lb_changepass" runat="server" OnClick="lb_changepass_Click">Alterar Password</asp:LinkButton>
+      				<a href="#" class="navbar-brand"></a>
     			</div>
     			<div class="collapse navbar-collapse">
-      			 <ul class="nav navbar-nav navbar-right">
-       			  <li><a href="adminlogin.aspx" class="smoothScroll">Logout</a></li>
+      			 <ul class="nav navbar-nav">
+       			  <li><a href="home.aspx" class="smoothScroll">Página Inicial</a></li>
       			 </ul>
     			</div>
   			</div>
@@ -66,16 +59,32 @@
     <div class="row">
 
         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-            <h2>Lista de Atletas</h2>
+            <h2>RECUPERAÇÃO | CONTA | ATLETA</h2>
+                <p>Indique por favor o endereço de e-mail associado à conta a recuperar</p>
+
 		<br/>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-               		
+			<div class="row">
+                <h4></h4>
+               	<label class="form-label"> 
+                <asp:TextBox ID="tb_email" runat="server" class="form-control" placeholder="Indique o e-mail" Width="291px"></asp:TextBox>
+                </label>
+ 			 <br />
+ 			</div>
+  			<div class="row">     
+                  <br />
+                  <br />
+                  <asp:Button ID="btn_recuperar" runat="server" Text="Recuperar conta" type="submit" class="btn btn-danger" Width="165px" OnClick="btn_recuperar_Click" />  
+              </div>
+                <br />	
+               <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Voltar para o Login</asp:LinkButton>
+
         </div>
 
     </div>
   </div>
 </section>
+
+
 
 <footer>
    <div class="row">
@@ -106,6 +115,8 @@
 		<script src="js/wow.min.js"></script>
 
 		<script src="js/custom.js"></script>
+
+
 
     </form>
 </body>

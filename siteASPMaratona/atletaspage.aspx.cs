@@ -13,5 +13,10 @@ namespace siteASPMaratona
         {
             lbl_nome_atleta.Text = $"Olá {Session["atleta"]}";
         }
+
+        protected void lb_changepass_atletas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("atletaspasschange.aspx");
+        }
     }
 }

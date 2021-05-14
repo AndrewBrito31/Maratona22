@@ -50,6 +50,9 @@
         <br />
         <br />
         <asp:Label ID="lbl_nome_atleta" runat="server"></asp:Label>
+        <br />
+        <br />
+        <asp:LinkButton ID="lb_changepass_atletas" runat="server" OnClick="lb_changepass_atletas_Click">Alterar Password</asp:LinkButton>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">

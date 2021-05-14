@@ -11,43 +11,43 @@ namespace siteASPMaratona
 {
 
 
-    public partial class backend
+    public partial class recoverpassadmin
     {
 
         /// <summary>
-        /// form1 control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
 
         /// <summary>
-        /// lbl_id_utilizador control.
+        /// tb_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_id_utilizador;
+        protected global::System.Web.UI.WebControls.TextBox tb_email;
 
         /// <summary>
-        /// lb_changepass control.
+        /// btn_recuperar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lb_changepass;
+        protected global::System.Web.UI.WebControls.Button btn_recuperar;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// LinkButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
     }
 }

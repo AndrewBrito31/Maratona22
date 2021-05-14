@@ -31,5 +31,14 @@ namespace siteASPMaratona
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_nome_atleta;
+
+        /// <summary>
+        /// lb_changepass_atletas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_changepass_atletas;
     }
 }

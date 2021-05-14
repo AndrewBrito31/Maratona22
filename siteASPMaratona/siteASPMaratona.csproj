@@ -73,6 +73,7 @@
     <Content Include="ativacao.aspx" />
     <Content Include="ativacaoadmin.aspx" />
     <Content Include="atletaspage.aspx" />
+    <Content Include="atletaspasschange.aspx" />
     <Content Include="contacto.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-theme.css" />
@@ -142,6 +143,9 @@
     <Content Include="loginatletas.aspx" />
     <Content Include="meteoLisboa.xslt" />
     <Content Include="percurso.aspx" />
+    <Content Include="recoverpassadmin.aspx" />
+    <Content Include="recoverpassatleta.aspx" />
+    <Content Include="userpasschange.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +191,13 @@
     <Compile Include="atletaspage.aspx.designer.cs">
       <DependentUpon>atletaspage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="atletaspasschange.aspx.cs">
+      <DependentUpon>atletaspasschange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="atletaspasschange.aspx.designer.cs">
+      <DependentUpon>atletaspasschange.aspx</DependentUpon>
+    </Compile>
     <Compile Include="backend.Master.cs">
       <DependentUpon>backend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,6 +234,27 @@
       <DependentUpon>percurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recoverpassadmin.aspx.cs">
+      <DependentUpon>recoverpassadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recoverpassadmin.aspx.designer.cs">
+      <DependentUpon>recoverpassadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="recoverpassatleta.aspx.cs">
+      <DependentUpon>recoverpassatleta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recoverpassatleta.aspx.designer.cs">
+      <DependentUpon>recoverpassatleta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userpasschange.aspx.cs">
+      <DependentUpon>userpasschange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userpasschange.aspx.designer.cs">
+      <DependentUpon>userpasschange.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap-theme.css.map" />
