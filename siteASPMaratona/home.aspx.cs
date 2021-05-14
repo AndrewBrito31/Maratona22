@@ -62,7 +62,7 @@ namespace siteASPMaratona
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress("andreasp.net@gmail.com");
                 mail.To.Add(tb_email_atleta.Text);
-                mail.Subject = $" Maratona Lisboa Ativação de Conta / Confirmação de Inscrição Maratona Lisboa";
+                mail.Subject = $"Obrigado pela sua Inscrição na Maratona Lisboa / Ativação de Conta";
 
                 mail.IsBodyHtml = true;
                 mail.Body = $"Obrigado pela sua inscrição {tb_nome_atleta.Text}! Clique <a href='https://localhost:44352/ativacao.aspx?nome_atleta={EncryptString(tb_nome_atleta.Text)}'>aqui</a> para ativar a sua conta e confirmar a sua inscrição.";

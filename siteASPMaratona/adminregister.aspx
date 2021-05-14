@@ -59,8 +59,9 @@
 
         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
             <h2>ADMIN | REGISTO </h2>
-            <p>Insira Nome de utilizador, Email e Password para criar utilizador</p>
-		    
+            <p>Insira nome de utilizador, email e password para criar utilizador</p>
+           <h3><asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label></h3>
+           <h3><asp:Label ID="lbl_registado" runat="server" Text="" ForeColor="#33CC33"></asp:Label></h3> 
 		<br/>
 			<div class="row">
                 <h4>Utilizador</h4>
@@ -88,7 +89,7 @@
                   
               </div>
                		
-                <asp:Label ID="lbl_mensagem" runat="server" Text=""></asp:Label>
+                
 
         </div>
 

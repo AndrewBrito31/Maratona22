@@ -47,7 +47,11 @@ namespace siteASPMaratona
             myConn.Close(); //fecha aplicação para não consumir dados
 
             if (replyStoredProcedure == 2)
+            {
+                Session["atleta"] = tb_nome_atleta.Text;
                 Response.Redirect("atletaspage.aspx");
+            }
+
 
             else if (replyStoredProcedure == 1)
                 lbl_mensagem.Text = "Utilizador inativo. Verifique a sua caixa de e-mail e ative a sua conta.";

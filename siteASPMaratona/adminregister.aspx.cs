@@ -52,12 +52,12 @@ namespace siteASPMaratona
 
             if (replyStoredProcedure == 1)
             {
-                lbl_mensagem.Text = "Obrigado pelo seu registo. O Administrador de sistemas vai ainda validar a sua conta. Aguarde instruções por e-mail.";
+                lbl_registado.Text= "Obrigado pelo seu registo. O Administrador de sistemas vai ainda validar a sua conta. Aguarde instruções por e-mail.";
 
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress("andreasp.net@gmail.com");
                 mail.To.Add("andreasp.net@gmail.com");
-                mail.Subject = $" Maratona Lisboa Ativação de Conta / Confirmação de Inscrição Maratona Lisboa";
+                mail.Subject = $" Admin Sistema Maratona22 / Por favor ative novo utilizador";
 
                 mail.IsBodyHtml = true;
                 mail.Body = $"Caro administrador de Sistema, o utilizador {tb_utilizador.Text} registou-se na sua página e é necessário que ative a conta para lhe dar acesso! Clique aqui <a href='https://localhost:44352/ativacaoadmin.aspx?utilizador={EncryptString(tb_utilizador.Text)}'>aqui</a> para ativar a conta do utilizador {tb_utilizador.Text}. Após ativação, por favor confirme para o endereço de e-mail indicado pelo utilizador: {tb_email.Text}. Obrigado";

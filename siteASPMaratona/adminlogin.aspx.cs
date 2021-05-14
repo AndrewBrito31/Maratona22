@@ -46,14 +46,20 @@ namespace siteASPMaratona
 
             myConn.Close(); //fecha aplicação para não consumir dados
 
-            if (replyStoredProcedure == 1)
-                lbl_mensagem.Text = "Utilizador Autenticado";
+            if (replyStoredProcedure == 2)
                 
+
+            {
+                Session["utilizador"] = tb_utilizador.Text;
+                Response.Redirect("adminpage.aspx");
+            }
+
+            else if (replyStoredProcedure == 1)
+                lbl_mensagem.Text = "Utilizador inativo. Contacte o administador de sistemas";
+
             else
                 lbl_mensagem.Text = "Utilizador ou password incorretas";
-
-            if (replyStoredProcedure == 1)
-                Response.Redirect("adminpage.aspx");
+                
 
         }
 

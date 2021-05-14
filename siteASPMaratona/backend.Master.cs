@@ -11,7 +11,7 @@ namespace siteASPMaratona
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lbl_id_utilizador.Text = $"Olá {Session["utilizador"]}";
         }
     }
 }

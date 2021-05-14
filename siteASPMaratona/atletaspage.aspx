@@ -45,6 +45,11 @@
         <span class="icon icon-bar"></span>
       </button>
       	<a href="#" class="navbar-brand">Atletas</a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="lbl_nome_atleta" runat="server"></asp:Label>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">

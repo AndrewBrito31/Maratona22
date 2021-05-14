@@ -59,6 +59,7 @@
                     <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
                         <h2>ADMIN | LOGIN </h2>
                         <p>Insira nome de utlizador e palavra passe para aceder</p>
+                        <p><asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label></p>
 
                         <br />
                         <div class="row">
@@ -82,9 +83,6 @@
                     </div>
 
                     </div>
-
-                          <asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label>
-
                 </div>
             </div>
         </section>
