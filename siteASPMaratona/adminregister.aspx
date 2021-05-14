@@ -81,15 +81,16 @@
   			    <br />
                 <br />
   			</div>	
-
-            <br />
-            <br />
             <asp:Button ID="btn_regUtilizador" runat="server" Text="Criar Utilizador" type="submit" class="btn btn-danger" OnClick="btn_regUtilizador_Click" Width="165px" />
-          </div>
+             <br />
+             <br />
+             <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Login Admin</asp:LinkButton>
+                  
+              </div>
                		
-        </div>
+                <asp:Label ID="lbl_mensagem" runat="server" Text=""></asp:Label>
 
-        <asp:Label ID="lbl_mensagem" runat="server" Text=""></asp:Label>
+        </div>
 
     </div>
   </div>
