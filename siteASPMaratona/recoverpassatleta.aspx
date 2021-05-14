@@ -62,6 +62,8 @@
             <h2>RECUPERAÇÃO | CONTA | ATLETA</h2>
                 <p>Indique por favor o endereço de e-mail associado à conta a recuperar</p>
 
+		    <asp:Label ID="lbl_msg" runat="server"></asp:Label>
+
 		<br/>
 			<div class="row">
                 <h4></h4>

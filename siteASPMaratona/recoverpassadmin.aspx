@@ -58,7 +58,9 @@
 
         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
             <h2>RECUPERAÇÃO | CONTA | ADMIN</h2>
-                <p>Indique por favor o e-mail associado à conta a recuperar</p>
+                <p>Indique por favor o endereço de e-mail associado à conta a recuperar</p>
+
+		    <asp:Label ID="lbl_msg" runat="server"></asp:Label>
 
 		<br/>
 			<div class="row">

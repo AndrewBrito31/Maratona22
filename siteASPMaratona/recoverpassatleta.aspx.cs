@@ -20,7 +20,39 @@ namespace siteASPMaratona
 
         protected void btn_recuperar_Click(object sender, EventArgs e)
         {
+            SqlConnection myConn = new SqlConnection(ConfigurationManager.ConnectionStrings["Maratona22ConnectionString"].ConnectionString);
 
+            SqlCommand myCommand = new SqlCommand();
+
+            myCommand.Parameters.AddWithValue("@email", tb_email.Text);
+
+            SqlParameter recuperarEmail = new SqlParameter();
+            recuperarEmail.ParameterName = "@retorno_pass";
+            recuperarEmail.Direction = ParameterDirection.Output;
+            recuperarEmail.SqlDbType = SqlDbType.VarChar;
+            recuperarEmail.Size = 50;
+            myCommand.Parameters.Add(recuperarEmail);
+
+            myCommand.CommandType = CommandType.StoredProcedure;
+
+            myCommand.CommandText = "recuperarPWatleta";
+
+            myCommand.Connection = myConn;
+
+            myConn.Open();
+            myCommand.ExecuteNonQuery(); //é um insert na bd mas não devolve dados
+
+            string replyStoredProcedure = myCommand.Parameters["@retorno_pass"].Value.ToString();
+
+            myConn.Close(); //fecha aplicação para não consumir dados
+
+            if (replyStoredProcedure == "")
+            {
+               lbl_msg.Text = "Email não consta dos nossos registos";
+            }
+
+            else
+                lbl_msg.Text = DecryptString(replyStoredProcedure);
         }
 
 
