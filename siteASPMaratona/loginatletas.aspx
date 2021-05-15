@@ -60,7 +60,6 @@
                         <h2>ATLETAS | LOGIN </h2>
                         <p>Insira nome de utlizador e palavra passe para aceder</p>
 
-                        <br />
                         <div class="row">
                             <h4>Utilizador</h4>
                             <label class="form-label">
