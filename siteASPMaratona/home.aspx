@@ -37,26 +37,21 @@
         <!-- Preloader section -->
         <div class="preloader">
             <div class="sk-spinner sk-spinner-pulse"></div>
-  
         </div>
-
 
         <!-- Home section -->
         <section id="home" class="parallax-section">
             <div class="gradient-overlay"></div>
             <div class="container">
 
-
                 <div class="col-md-offset-2 col-md-8 col-sm-12">
-                    
-               <h2 style="color:whitesmoke">
-                   <asp:Label ID="lbl_mensagem" runat="server" Text="" Visible="True" ForeColor="Black"></asp:Label>
-               </h2>
+                    <h2 style="color: whitesmoke">
+                        <asp:Label ID="lbl_mensagem" runat="server" Text="" Visible="True" ForeColor="Black"></asp:Label>
+                    </h2>
 
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">Maratona de Lisboa 2022</h1>
-<%--                    <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Inscreva-se!</a>--%>
+                    <%--                    <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Inscreva-se!</a>--%>
                 </div>
-                
             </div>
         </section>
 
@@ -106,27 +101,23 @@
                             <asp:TextBox type="text" ID="tb_email_atleta" runat="server" class="form-control" placeholder="Insira o seu email" Width="291px" TextMode="Email"></asp:TextBox>
                         </label>
                         <h4>Password</h4>
-                        <label class="form-label">           
+                        <label class="form-label">
                             <asp:TextBox type="text" ID="tb_password" runat="server" class="form-control" placeholder="Insira a sua password" Width="291px" TextMode="Password"></asp:TextBox>
-                          </label>
-                        </div>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="col-md-12">
-                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Inscrever" OnClick="Button1_Click" />                   
+                    <asp:Button ID="Button1" runat="server" class="btn btn-danger" Text="Inscrever" OnClick="Button1_Click" />
                 </div>
-               <div class="col-md-12">
-                                    <br />
-                                    <br />
+                <div class="col-md-12">
+                    <br />
+                    <br />
                     <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Login Atletas Inscritos</asp:LinkButton>
                 </div>
 
-                
             </div>
-
-
         </section>
-
 
         <!-- About section -->
         <section id="about" class="parallax-section">
@@ -137,10 +128,13 @@
                         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
                             <h2>Sobre a Maratona de Lisboa</h2>
                             <h3>Galeria | Informação | Percurso</h3>
-                            <h3> &nbsp;Tempo em Lisboa <h4> &nbsp;<asp:Xml ID="Xml_meteo" runat="server"></asp:Xml> </h4></h3>
+                            <h3>&nbsp;Tempo em Lisboa
+                                <h4>&nbsp;<asp:Xml ID="Xml_meteo" runat="server"></asp:Xml>
+                                </h4>
+                            </h3>
                         </div>
                     </div>
-                     
+
                     <div class="wow fadeInUp col-md-6 col-sm-4" data-wow-delay="0.5s">
                         <h3>Galeria</h3>
                         <!-- flexslider -->
@@ -158,8 +152,8 @@
                                 </li>
 
                             </ul>
-                            
                         </div>
+
                         <p>A prova decorrerá a 8 de Maio de 2022 pelas 8h30 e o percurso total de 42,195km terá que ser percorrido no máximo em 6 horas terminando no máximo às 14h30.</p>
                     </div>
 
@@ -168,14 +162,9 @@
                             <h3>Percurso</h3>
                             <img src="images/percurso.jpg" class="img-responsive" alt="Percurso">
                         </a>
-         
-                    </div>  
-
-
+                    </div>
 
                 </div>
-
-        
 
             </div>
         </section>
@@ -197,13 +186,15 @@
         <!-- Copyright section -->
         <section id="copyright">
             <div class="container">
-              <div class="col-md-8">
-                <p><a href="https://linkedin.com/in/andré-wahnon-brito-8b741361/">  <img src="images/linkedin.png" width="30" height="30">  André Brito</a> </p> 
-              </div>
-          
-            Citeforma | Programador.NET | 2021
-     
-              </div>
+
+                <div class="col-md-4">
+                    <br />
+                    <a href="https://linkedin.com/in/andré-wahnon-brito-8b741361/">
+                        <img src="images/linkedin.png" width="30" height="30">
+                        André Brito</a>
+                    <br />
+                    <h5>Citeforma | Programador.NET | 2021</h5>
+                </div>
             </div>
         </section>
 

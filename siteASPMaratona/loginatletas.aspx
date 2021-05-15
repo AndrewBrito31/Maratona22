@@ -63,7 +63,7 @@
                         <br />
                         <div class="row">
                             <h4>Utilizador</h4>
-                            <label class="form-label">                             
+                            <label class="form-label">
                                 <asp:TextBox type="text" ID="tb_nome_atleta" runat="server" class="form-control" placeholder="Insira o seu nome" Width="291px"></asp:TextBox>
                             </label>
                         </div>
@@ -75,24 +75,22 @@
                             <br />
                             <br />
                         </div>
-                        <asp:Button ID="btn_login_atletas" Text="Login" type="submit" class="btn btn-danger" runat="server" Width="168px" OnClick="btn_login_atletas_Click"/><br />
+                        <asp:Button ID="btn_login_atletas" Text="Login" type="submit" class="btn btn-danger" runat="server" Width="168px" OnClick="btn_login_atletas_Click" /><br />
                         <br />
-                         <br />
+                        <br />
                         <br />
                         <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Inscrição Atletas</asp:LinkButton>
-                         &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
                         <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Recuperar Password</asp:LinkButton>
                     </div>
 
-                    </div>
-
-                          <asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label>
-
                 </div>
+
+                <asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label>
+
+            </div>
             </div>
         </section>
-
-
 
         <footer>
             <div class="row">
@@ -100,7 +98,6 @@
                     <p>André Brito | Maio 2021 | Citeforma </p>
                 </div>
             </div>
-
         </footer>
 
         <!-- javscript js -->

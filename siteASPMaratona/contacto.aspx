@@ -57,32 +57,30 @@
                 <div class="row">
 
                     <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
-                        <h2>FORMUlÁRIO | CONTACTO </h2>
+                        <h2>FORMULÁRIO | CONTACTO </h2>
                         <p>Envie-nos um e-mail através do formulário em baixo</p>
 
                         <br />
                         <div class="row">
                             <h4>Para o podermos contactar insira o seu endereço de e-mail</h4>
-                            <label class="form-label">                     
+                            <label class="form-label">
                                 <asp:TextBox type="text" ID="tb_from" runat="server" class="form-control" placeholder="Insira o seu endereço de e-mail" Width="291px" AutoCompleteType="None" TextMode="Email"></asp:TextBox>
                             </label>
                         </div>
-                         <div class="row">
+                        <div class="row">
                             <h4>Formulário de Contacto</h4>
                             <label class="form-label">
-                                <asp:TextBox ID="tb_formulario" runat="server" class="form-control" placeholder="Escreva aqui a sua mensagem" TextMode="MultiLine" Height="288px" Width="509px"></asp:TextBox>
+                                <asp:TextBox ID="tb_formulario" runat="server" class="form-control" placeholder="Escreva aqui a sua mensagem" TextMode="MultiLine" Height="198px" Width="509px"></asp:TextBox>
                             </label>
-                          </div>
+                        </div>
                         <asp:Button ID="btn_enviar" runat="server" Text="Enviar Mensagem" type="submit" class="btn btn-danger" OnClick="btn_enviar_Click" />
-                          <h3> <asp:Label ID="lbl_msgEnviada" runat="server" Text="Obrigado pela sua mensagem. Voltaremos ao seu contacto em breve. " Visible="False"></asp:Label></h3>
+                        <h3><asp:Label ID="lbl_msgEnviada" runat="server" Text="Obrigado pela sua mensagem. Voltaremos ao seu contacto em breve. " Visible="False"></asp:Label></h3>
                     </div>
-                    </div>
-                      
                 </div>
+
+            </div>
             </div>
         </section>
-
-
 
         <footer>
             <div class="row">
@@ -90,7 +88,6 @@
                     <p>André Brito | Maio 2021 | Citeforma </p>
                 </div>
             </div>
-
         </footer>
 
         <!-- javscript js -->

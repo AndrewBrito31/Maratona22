@@ -59,15 +59,17 @@
                     <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
                         <h2>ADMIN | LOGIN </h2>
                         <p>Insira nome de utlizador e palavra passe para aceder</p>
-                        <p><asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label></p>
-
+                        <p>
+                            <asp:Label ID="lbl_mensagem" runat="server" ForeColor="Red"></asp:Label></p>
                         <br />
+
                         <div class="row">
                             <h4>Utilizador</h4>
                             <label class="form-label">
                                 <asp:TextBox type="text" ID="tb_utilizador" runat="server" class="form-control" placeholder="Insira o utilizador" Width="291px"></asp:TextBox>
                             </label>
                         </div>
+
                         <div class="row">
                             <h4>Password</h4>
                             <label class="form-label">
@@ -76,20 +78,19 @@
                             <br />
                             <br />
                         </div>
+
                         <asp:Button ID="Button1" runat="server" Text="Login" type="submit" class="btn btn-danger" OnClick="Button1_Click" Width="168px" />
                         <br />
                         <br />
                         <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Criar Utilizador</asp:LinkButton>
-                    &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
                         <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Recuperar Password</asp:LinkButton>
-                    </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
-
-
 
         <footer>
             <div class="row">
@@ -97,7 +98,6 @@
                     <p>André Brito | Maio 2021 | Citeforma </p>
                 </div>
             </div>
-
         </footer>
 
         <!-- javscript js -->
