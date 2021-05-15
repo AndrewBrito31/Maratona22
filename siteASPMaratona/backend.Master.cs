@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace siteASPMaratona
 {
@@ -30,5 +31,6 @@ namespace siteASPMaratona
             Session.Abandon();
             Response.Redirect("adminlogin.aspx");
         }
+
     }
 }

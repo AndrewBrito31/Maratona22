@@ -13,7 +13,7 @@ namespace siteASPMaratona
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btn_word_Click(object sender, EventArgs e)
@@ -32,7 +32,16 @@ namespace siteASPMaratona
 
         protected void btn_excel_Click(object sender, EventArgs e)
         {
+            Response.Clear();//limpa memória/sessão, evita dados inconsistentes caso existam multiplos users ao mesmo tempo na sessão
+            Response.AddHeader("Content-Disposition", "attachement; filename=listaatletas.xls");
+            Response.ContentType = "application/vnd.ms.excel";
 
+            StringWriter sw = new StringWriter();
+            HtmlTextWriter htw = new HtmlTextWriter(sw);
+
+            htw.Write($"{GridView1}");
+            Response.Write(sw.ToString());
+            Response.End();
         }
     }
 }

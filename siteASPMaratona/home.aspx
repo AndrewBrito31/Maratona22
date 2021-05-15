@@ -128,10 +128,7 @@
                         <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
                             <h2>Sobre a Maratona de Lisboa</h2>
                             <h3>Galeria | Informação | Percurso</h3>
-                            <h3>&nbsp;Tempo em Lisboa
-                                <h4>&nbsp;<asp:Xml ID="Xml_meteo" runat="server"></asp:Xml>
-                                </h4>
-                            </h3>
+                            <asp:Xml ID="Xml_meteo" runat="server"></asp:Xml>
                         </div>
                     </div>
 

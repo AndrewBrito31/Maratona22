@@ -16,10 +16,10 @@ namespace siteASPMaratona
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           //if (Session["atleta"] == null)
-           //{
-           //     Response.Redirect("loginatletas.aspx");
-           //}
+            if (Session["atleta"] == null)
+            {
+                Response.Redirect("loginatletas.aspx");
+            }
             lbl_nome_atleta.Text = $"Olá {Session["atleta"]}";
         }
 

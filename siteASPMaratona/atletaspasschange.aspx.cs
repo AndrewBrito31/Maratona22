@@ -51,7 +51,6 @@ namespace siteASPMaratona
             if (replyStoredProcedure == 1)
             {
                 lbl_msg.Text = "Password alterada!";
-                
             }
 
             else

@@ -43,12 +43,8 @@
                     </button>
                     <a href="#" class="navbar-brand">ADMIN | Gestão Inscrições</a><br />
                     <br />
-                    <br />
-                    <br />
                     &nbsp;
-                    <asp:Label ID="lbl_id_utilizador" runat="server"></asp:Label>
-                    <br />
-                    <br />
+                    <h3><asp:Label ID="lbl_id_utilizador" runat="server"></asp:Label></h3>
                     <asp:LinkButton ID="lb_changepass" runat="server" OnClick="lb_changepass_Click">Alterar Password</asp:LinkButton>
                 </div>
                 <div class="collapse navbar-collapse">

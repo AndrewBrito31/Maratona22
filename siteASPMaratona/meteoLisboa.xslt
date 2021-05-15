@@ -5,14 +5,8 @@
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:template match="/report">
-		<br/>
-		<b>Mínima: </b>
-		<xsl:value-of select="/report/forecast/land[@name='Lisboa']/landWeather/temp/tempMin"/>
-		<br/>
-		<b>Máxima: </b>
-		<xsl:value-of select="/report/forecast/land[@name='Lisboa']/landWeather/temp/tempMax"/>
-		<br/>
-		<b>Estado: </b>
-		<xsl:value-of select="/report/forecast/land[@name='Lisboa']/landWeather/currentWeather/symbolDesc"/>
+		<h4>Tempo em Lisboa</h4>
+		<h4><xsl:value-of select="/report/forecast/land[@name='Lisboa']/landWeather/currentWeather/symbolDesc"/> | Mínima: <xsl:value-of select="/report/forecast/land[@name='Lisboa']/landWeather/temp/tempMin"/>º 
+		| Máxima: <xsl:value-of select="/report/forecast/land[@name='Lisboa']/landWeather/temp/tempMax"/>º</h4>
     </xsl:template>
 </xsl:stylesheet>

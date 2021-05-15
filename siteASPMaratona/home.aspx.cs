@@ -76,6 +76,10 @@ namespace siteASPMaratona
 
                 servidor.Send(mail);
 
+                tb_email_atleta.Text = "";
+                tb_nome_atleta.Text = "";
+                tb_password.Text = "";
+
             }
             else
                 lbl_mensagem.Text = "Já existe um atleta inscrito com o mesmos nome e endereço de email que inseriu";
