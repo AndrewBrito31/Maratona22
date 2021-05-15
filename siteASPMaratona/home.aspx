@@ -160,7 +160,7 @@
                             </ul>
                             
                         </div>
-                        <p>A prova decorrerá a 8 de Maio de 2022 pelas 8h30 e percurso total de 42,195km terá que ser percorrido no máximo em 6 horas terminando no máximo às 14h30.</p>
+                        <p>A prova decorrerá a 8 de Maio de 2022 pelas 8h30 e o percurso total de 42,195km terá que ser percorrido no máximo em 6 horas terminando no máximo às 14h30.</p>
                     </div>
 
                     <div class="wow fadeInUp col-md-6 col-sm-4" data-wow-delay="0.3s">

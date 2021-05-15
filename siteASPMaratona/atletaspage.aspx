@@ -44,22 +44,25 @@
         <span class="icon icon-bar"></span>
         <span class="icon icon-bar"></span>
       </button>
-      	<a href="#" class="navbar-brand">Atletas</a>
+      	<a href="#" class="navbar-brand">Página do Atleta</a>
         <br />
-        <br />
-        <br />
-        <br />
-        <asp:Label ID="lbl_nome_atleta" runat="server"></asp:Label>
-        <br />
-        <br />
-        <asp:LinkButton ID="lb_changepass_atletas" runat="server" OnClick="lb_changepass_atletas_Click">Alterar Password</asp:LinkButton>
+
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><asp:LinkButton ID="lb_logout" runat="server" OnClick="lb_logout_Click">Logout</asp:LinkButton></li>
+         
       </ul>
     </div>
-
+              <h3> <asp:Label ID="lbl_nome_atleta" runat="server"></asp:Label>
+        , imprima o seu dorsal e vemo-nos na corrida!</h3>
+      <p> 
+          <asp:TextBox ID="tb_numDorsal" runat="server" class="form-control" placeholder="Insira o numero do seu dorsal" Width="217px"></asp:TextBox>
+      </p><br />
+        <asp:Button ID="btn_dorsal" runat="server" class="btn btn-danger" Text="Gerar PDF Dorsal" OnClick="btn_dorsal_Click" Width="217px"/>       
+      <br />
+      <br />
+      <asp:LinkButton ID="lb_changepass_atletas" runat="server" OnClick="lb_changepass_atletas_Click">Alterar Password</asp:LinkButton>
   </div>
 </div>
 
@@ -67,8 +70,9 @@
   <div class="container">
     <div class="row">
           <br />
-        <p>A prova decorrerá a 8 de Maio de 2022 pelas 8h30 e percurso total de 42,195km terá que ser percorrido no máximo em 6 horas terminando no máximo às 14h30.</p>
+        <p>A prova decorrerá a 8 de Maio de 2022 pelas 8h30 e o percurso total de 42,195km terá que ser percorrido no máximo em 6 horas terminando no máximo às 14h30.</p>
 		  <br />
+        <h3>Percurso</h3>
         <div style="overflow:hidden;position:relative;">
 			<div style="position:relative;width:100%;padding-top:56.25%;overflow:visible;"/>
 				<iframe name="plotaroute_map_1165636" src="https://www.plotaroute.com/embedmap/1165636?units=km" style="position:absolute;top:0;left:0;bottom:0;right:0;width:100%; height:80%;" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
