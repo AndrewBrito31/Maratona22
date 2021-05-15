@@ -46,9 +46,7 @@ namespace siteASPMaratona
 
             myConn.Close(); //fecha aplicação para não consumir dados
 
-            if (replyStoredProcedure == 2)
-                
-
+            if (replyStoredProcedure == 2)    
             {
                 Session["utilizador"] = tb_utilizador.Text;
                 Response.Redirect("adminpage.aspx");
@@ -59,7 +57,6 @@ namespace siteASPMaratona
 
             else
                 lbl_mensagem.Text = "Utilizador ou password incorretas";
-                
 
         }
 
@@ -67,6 +64,13 @@ namespace siteASPMaratona
         {
             Response.Redirect("adminregister.aspx");
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("recoverpassadmin.aspx");
+        }
+
+
 
         public static string EncryptString(string Message)
         {
@@ -113,5 +117,7 @@ namespace siteASPMaratona
             enc = enc.Replace("\\", "III");
             return enc;
         }
+
+
     }
 }

@@ -62,8 +62,6 @@
             <h2>RECUPERAÇÃO | CONTA | ATLETA</h2>
                 <p>Indique por favor o endereço de e-mail associado à conta a recuperar</p>
 
-		    <asp:Label ID="lbl_msg" runat="server"></asp:Label>
-
 		<br/>
 			<div class="row">
                 <h4></h4>
@@ -72,7 +70,8 @@
                 </label>
  			 <br />
  			</div>
-  			<div class="row">     
+  			<div class="row">
+                  <asp:Label ID="lbl_msg" runat="server" ForeColor="Red"></asp:Label>
                   <br />
                   <br />
                   <asp:Button ID="btn_recuperar" runat="server" Text="Recuperar conta" type="submit" class="btn btn-danger" Width="165px" OnClick="btn_recuperar_Click" />  

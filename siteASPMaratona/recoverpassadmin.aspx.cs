@@ -8,6 +8,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Security.Cryptography;
+using System.Net.Mail;
+using System.Net;
 
 namespace siteASPMaratona
 {
@@ -48,11 +50,32 @@ namespace siteASPMaratona
 
             if (replyStoredProcedure == "")
             {
-                 lbl_msg.Text = "Email não consta dos nossos registos";
+                 lbl_msg.Text = "O endereço de email que indicou não consta dos nossos registos";
             }
 
             else
-                lbl_msg.Text = DecryptString(replyStoredProcedure);
+            {
+                
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("andreasp.net@gmail.com");
+                mail.To.Add(tb_email.Text);
+                mail.Subject = $"Recuperaçção de Palavra Passe";
+
+                mail.IsBodyHtml = true;
+                mail.Body = $"A palavra passe associada ao endereço de email {tb_email.Text} é {DecryptString(replyStoredProcedure)}!";
+
+                SmtpClient servidor = new SmtpClient();
+                servidor.Host = "smtp.gmail.com";
+                servidor.Port = 587;
+                servidor.Credentials = new NetworkCredential("andreasp.net@gmail.com", "Citeforma2021");
+
+                servidor.EnableSsl = true;
+
+                servidor.Send(mail);
+
+                lbl_msg.Text = "Enviada password associada para o email indicado";
+            }
+                
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)

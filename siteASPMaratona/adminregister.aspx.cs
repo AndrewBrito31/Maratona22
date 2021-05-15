@@ -70,8 +70,6 @@ namespace siteASPMaratona
                 servidor.EnableSsl = true;
 
                 servidor.Send(mail);
-
-
             }
 
             else

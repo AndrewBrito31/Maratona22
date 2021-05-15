@@ -52,10 +52,12 @@
                     <br />
                     <br />
                     <asp:LinkButton ID="lb_changepass" runat="server" OnClick="lb_changepass_Click">Alterar Password</asp:LinkButton>
-    			</div>
+    			
+                
+                </div>
     			<div class="collapse navbar-collapse">
       			 <ul class="nav navbar-nav navbar-right">
-       			  <li><a href="adminlogin.aspx" class="smoothScroll">Logout</a></li>
+       			  <li><asp:LinkButton ID="lb_logout" runat="server" OnClick="lb_logout_Click">Logout</asp:LinkButton></li>
       			 </ul>
     			</div>
   			</div>

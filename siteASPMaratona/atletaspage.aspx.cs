@@ -11,12 +11,22 @@ namespace siteASPMaratona
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           if (Session["atleta"] == null)
+           {
+                Response.Redirect("loginatletas.aspx");
+           }
             lbl_nome_atleta.Text = $"Olá {Session["atleta"]}";
         }
 
         protected void lb_changepass_atletas_Click(object sender, EventArgs e)
         {
             Response.Redirect("atletaspasschange.aspx");
+        }
+
+        protected void lb_logout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("loginatletas.aspx");
         }
     }
 }

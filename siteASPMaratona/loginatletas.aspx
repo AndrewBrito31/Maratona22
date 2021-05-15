@@ -80,7 +80,8 @@
                          <br />
                         <br />
                         <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Inscrição Atletas</asp:LinkButton>
-
+                         &nbsp;&nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Recuperar Password</asp:LinkButton>
                     </div>
 
                     </div>

@@ -56,7 +56,7 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="loginatletas.aspx" class="smoothScroll">Logout</a></li>
+        <li><asp:LinkButton ID="lb_logout" runat="server" OnClick="lb_logout_Click">Logout</asp:LinkButton></li>
       </ul>
     </div>
 
